@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: selfhealtestapp
-  namespace: argocd
+  namespace: argocdapp2
 spec:
   destination:
     namespace: argocdappdemo
