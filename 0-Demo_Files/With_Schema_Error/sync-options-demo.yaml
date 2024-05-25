@@ -13,5 +13,5 @@ spec:
         - containerPort: 80
   # Intentional Schema Validation Issue
   # The 'replicas' field is not valid for a Pod specification.
-  invalidField: invalidValue  # This field is intentionally invalid
+  #invalidField: invalidValue  # This field is intentionally invalid
 
