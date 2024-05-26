@@ -4,7 +4,7 @@ metadata:
   name: example-deployment
   namespace: argocdappdemo-retry
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: example
@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.14.2
-       # image: nginx:non-existent
+        #image: nginx:1.14.2
+        image: nginx:non-existent
         ports:
         - containerPort: 80
 
