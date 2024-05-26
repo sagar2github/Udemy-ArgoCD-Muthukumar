@@ -5,7 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: Validate=true
 spec:
-  invalidField: invalidValue  # This field is intentionally invalid
+# invalidField: invalidValue  # This field is intentionally invalid
   containers:
     - name: nginx-container
       image: nginx:latest
@@ -13,9 +13,4 @@ spec:
         - containerPort: 80
   # Intentional Schema Validation Issue
   # The 'replicas' field is not valid for a Pod specification.
-<<<<<<< HEAD
-  #invalidField: invalidValue  # This field is intentionally invalid
-=======
- # invalidField: invalidValue  # This field is intentionally invalid
->>>>>>> f6ee8f219b3e793fc6163098d0dc6d9f1a71996c
 
